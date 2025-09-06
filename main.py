@@ -50,7 +50,7 @@ js_handoff= Handoff(
 triage_agent= Agent(
     name= "Triage agent",
     instructions= "You are a helpful triage agent, Do not answer regarding python or javascript, instead handoff to js_agent or python_agent",
-    handoffs= [python_agent, js_agent]
+    handoffs= [python_handoff, js_handoff]
 )
 
 result= Runner.run_sync(
